@@ -4,6 +4,7 @@ import { Col, Row, Container} from 'react-bootstrap';
 
 function LandingPage() {
     return (
+        //heroku test automatic deploy
         <div >
         <Row id = "lpRow">
             <Col id = "lpRightCol" md={7}>
