@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
-}
+#lpMockBrowser{
+  position: relative;
+  right:8em;
+  width: 50em;
+  height: 30em;
+  margin-top: 25%;
+  margin-bottom: 25%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: .5em;
+  z-index: 1;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#lpMockBrowserLine{
+  width: 100%;
+  height: 2.5em;
+  background-color: whitesmoke;
+  border-bottom: 2px solid grey;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#lpRow{
+  height: auto;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#lpRightCol{
+  background-color:#343330;
+  color: #a0833a;
 }
