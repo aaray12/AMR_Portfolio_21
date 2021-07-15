@@ -1,15 +1,14 @@
 #lpMockBrowser{
   position: relative;
   right:8em;
-  width: 50em;
-  height: 30em;
-  margin-top: 25%;
-  margin-bottom: 25%;
-
+  width: 150vh;
+  height: 55vh;
+  margin-top: 20vh;
   background-color: whitesmoke;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: .5em;
   z-index: 1;
+  transition: width 1s, height 1s, right 1s linear, margin-top 1s;
   
 }
 #lpMockBrowserLine{
@@ -21,9 +20,41 @@
   border-top-right-radius: .5em;
 }
 #lpRow{
-  height: auto;
+  height: 100vh;
 }
 #lpRightCol{
   background-color:#343330;
   color: #a0833a;
+  text-align: center;
+}
+
+.lpMockBrowserButtons{
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  border-radius: 10px;
+  background-color: teal;
+  margin:.25em;
+  margin-top:.8em;
+  cursor: pointer;
+}
+#lpTextDiv{
+  text-align: left;
+  margin-left: 17%;
+  margin-top: 33vh;
+}
+#lpMockBrowserRedButtonX{
+  color: #fe5b52;
+  font-size: .8em;
+  position: relative;
+  left: .2em;
+  bottom: .275em;
+}
+#lpMockBrowserRedButtonX:hover{
+  color: #990000;
+  font-size: .8em;
+  position: relative;
+  left: .2em;
+  bottom: .275em;
+  
 }
