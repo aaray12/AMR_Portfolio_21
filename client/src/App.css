@@ -24,7 +24,7 @@
 }
 #lpRightCol{
   background-color:#343330;
-  color: #a0833a;
+  
   text-align: center;
 }
 
@@ -33,7 +33,6 @@
   width: .75em;
   height: .75em;
   border-radius: 10px;
-  background-color: teal;
   margin:.25em;
   margin-top:.8em;
   cursor: pointer;
@@ -42,6 +41,9 @@
   text-align: left;
   margin-left: 17%;
   margin-top: 33vh;
+  font-family: 'Nanum Gothic', sans-serif;
+  /* color: #a0833a; */
+  color: #D1A617;
 }
 #lpMockBrowserRedButtonX{
   color: #fe5b52;
@@ -54,7 +56,73 @@
   color: #990000;
   font-size: .8em;
   position: relative;
-  left: .2em;
-  bottom: .275em;
-  
+  left: .225em;
+  bottom: .3em;
+}
+#lpMockBrowserRedButton{
+  position: relative;
+  bottom: .75em;
+}
+#lpMockBrowserYellowButton-{
+  font-size: x-large;
+  position: relative;
+  bottom: .6em;
+  left: .03em;
+  color: #e6c028;
+}
+#lpMockBrowserYellowButton-:hover{
+  font-size: x-large;
+  position: relative;
+  bottom: .6em;
+  /* left: .04em; */
+  color: #7f5a00;
+}
+#lpMockBrowserYellowButton{
+  position: relative;
+  top:.08em
+}
+#lpMockBrowserGreenButtonV{
+  position: relative;
+  bottom: .2em;
+  text-align: center;
+  color:#54c22a
+}
+#lpMockBrowserGreenButtonV:hover{
+  position: relative;
+  bottom: .23em;
+  text-align: center;
+  color:#025b00
+}
+#lpMockBrowserGreenButton{
+  position: relative;
+  bottom: .49em;
+}
+#lpHomeLink{
+  position: absolute;
+  background-color: #7E5920;
+  text-align: left;
+  border-width:3px;  
+  border-style:double;
+  border-color: #D1A617;
+  border-radius: 1.5em;
+  width: 2.3em;
+  height: 2.3em;
+  margin: 1.5em;
+}
+#lpHomeLink:hover{
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  border-width:4px;  
+  border-radius: 1.5em;
+}
+#lpAR{
+  color: white;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: .2em;
+}
+#lpAR:hover{
+  font-size: x-large;
+  margin-top: .3em;
 }

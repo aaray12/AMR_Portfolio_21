@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row, Container} from 'react-bootstrap';
-import { hinge, bounceInRight, zoomOutDown, zoomIn } from 'react-animations';
+import { hinge, bounceInRight, zoomOutDown, zoomIn, fadeInLeft, fadeInDown } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 
 
@@ -20,6 +20,14 @@ function LandingPage() {
           },
           zoomIn: {
             animationName: zoomIn,
+            animationDuration: '1s'
+          },
+          fadeInLeft: {
+            animationName: fadeInLeft,
+            animationDuration: '1s'
+          },
+          fadeInDown: {
+            animationName: fadeInDown,
             animationDuration: '1s'
           }
       })
@@ -46,8 +54,12 @@ function LandingPage() {
         //heroku test automatic deploy
         <div >
         <Row id = "lpRow">
+          
             <Col id = "lpRightCol" md={7}>
-            <div id = "lpTextDiv">
+            <div id = "lpHomeLink"className={css(styles.fadeInDown)}>
+                <h5 id = "lpAR">AR</h5>
+            </div>
+            <div id = "lpTextDiv" className={css(styles.fadeInLeft)}>
                 <h2>
                     Hey,
                 </h2>
@@ -63,12 +75,14 @@ function LandingPage() {
                 <div id ="lpMockBrowser" className={css(styles.bounceInRight)} >
                     <div id = "lpMockBrowserLine">
                         <div id = "lpMockBrowserButtonsDiv">
-                            <div onClick = {MockBrowserClose} className ="lpMockBrowserButtons" style ={{backgroundColor:"#fe5b52", marginLeft:".5em"}}>
+                            <div onClick = {MockBrowserClose} className ="lpMockBrowserButtons" id ="lpMockBrowserRedButton" style ={{backgroundColor:"#fe5b52", marginLeft:".5em"}}>
                                 <p id = "lpMockBrowserRedButtonX" >x</p>
                             </div>
-                            <div  onClick = {MockBrowserMinimize} className ="lpMockBrowserButtons" style ={{backgroundColor:"#e6c028"}}>
+                            <div  onClick = {MockBrowserMinimize} className ="lpMockBrowserButtons" id = "lpMockBrowserYellowButton" style ={{backgroundColor:"#e6c028"}}>
+                                <p id ="lpMockBrowserYellowButton-" >-</p>
                             </div>
-                            <div  onClick = {MockBrowserExpand} className = "lpMockBrowserButtons" style ={{backgroundColor:"#54c22a"}}>
+                            <div  onClick = {MockBrowserExpand} className = "lpMockBrowserButtons" id = "lpMockBrowserGreenButton" style ={{backgroundColor:"#54c22a"}}>
+                                <p id ="lpMockBrowserGreenButtonV">^</p>
                             </div>
                         </div>
                     </div>
