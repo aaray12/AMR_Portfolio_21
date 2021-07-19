@@ -2,8 +2,7 @@ import React from "react";
 import { Col, Row, Container } from 'react-bootstrap';
 import { hinge, bounceInRight, zoomOutDown, zoomIn, fadeInLeft, fadeInDown, flipInX } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
-const me1 = "https://res.cloudinary.com/aaray/image/upload/v1626735132/Portfolio/me1_tzhqqx.png"
-const me2 = "https://res.cloudinary.com/aaray/image/upload/v1626735136/Portfolio/me2_wpbume.png"
+
 
 
 function LandingPage() {
@@ -62,10 +61,10 @@ function LandingPage() {
         myImage.style.marginTop = "10vh"
         myImage.classList.add(css(styles.flipInX))
         myImage.addEventListener('mouseover', function(){
-            myImage.src = me2
+            myImage.src = "https://res.cloudinary.com/aaray/image/upload/v1626735136/Portfolio/me2_wpbume.png"
         })
         myImage.addEventListener('mouseout', function(){
-            myImage.src = me1
+            myImage.src = "https://res.cloudinary.com/aaray/image/upload/v1626735132/Portfolio/me1_tzhqqx.png"
         })
     }
     setTimeout(() => {document.getElementById("lpMockBrowser").style.backgroundColor= "#14213d"}, 1250);
@@ -111,7 +110,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div id = "lpMeImgDiv">
-                        <img id="me1" src={me1} style={{ visibility: "hidden" }} />
+                        <img id="me1" src="https://res.cloudinary.com/aaray/image/upload/v1626735132/Portfolio/me1_tzhqqx.png" style={{ visibility: "hidden" }} />
 
                         </div>
                         <div id = "lpBrowsrerBackground">
