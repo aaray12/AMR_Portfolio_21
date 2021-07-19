@@ -149,7 +149,7 @@ z-index: 1;
   transition: height 1s, right 1s linear, margin-top 2s, background-color .25s linear, box-shadow .25s linear;
   opacity: 100%;
   /* left: 32.5vh; */
-  z-index: 2;
+  /* z-index: 2; */
 }
 #me1:hover{
   width: 33%;
