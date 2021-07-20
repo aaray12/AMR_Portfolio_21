@@ -64,10 +64,10 @@ function LandingPage() {
         myImage.style.marginTop = "10vh"
         myImage.classList.add(css(styles.flipInX))
         myImage.addEventListener('mouseover', function(){
-            myImage.setAttribute("publicId", {me2})
+            myImage.src = "../images/me2.png"
         })
         myImage.addEventListener('mouseout', function(){
-            myImage.setAttribute("publicId", {me1})
+            myImage.src = "../images/me1.png"
         })
     }
     setTimeout(() => {document.getElementById("lpMockBrowser").style.backgroundColor= "#14213d"}, 1250);
@@ -113,7 +113,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div id = "lpMeImgDiv">
-                        <img id="me1" src="https://res.cloudinary.com/aaray/image/upload/v1626739710/Portfolio/coffee-time-png_91570_bgoq2v.jpg" style={{ visibility: "hidden" }}></img>
+                        <img id="me1" src="../images/me1.png" style={{ visibility: "hidden" }}></img>
                         </div>
                         <div id = "lpBrowsrerBackground">
 
