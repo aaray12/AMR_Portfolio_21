@@ -110,15 +110,15 @@
   border-style:double;
   border-color: #D1A617;
   border-radius: 1.5em;
-  width: 2.3em;
-  height: 2.3em;
+  width: 2.5em;
+  height: 2.5em;
   margin: 1.5em;
-  margin-left: 9.5%;
+  margin-left: 10%;
 }
 #lpHomeLink:hover{
   cursor: pointer;
-  width: 3em;
-  height: 3em;
+  width: 3.2em;
+  height: 3.2em;
   border-width:4px;  
   border-radius: 1.5em;
 }
@@ -126,7 +126,7 @@
   color: white;
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
-  margin-top: .2em;
+  margin-top: .3em;
 }
 #lpAR:hover{
   font-size: x-large;
@@ -167,26 +167,109 @@ z-index: 1;
   opacity: 0%;
   transition: opacity 2s
 }
+#lpTechLine{
+  color: #79726c;
+}
+#lpChiDiv{
+  position: absolute;
+  margin: auto;
+  width: 42.3%;
+  margin-left: -.8em;
+  padding-left: 1em;
+  text-align: center;
+  margin-top: 22.5vh;
+  
+}
+#lpChiSkyline{
+  margin: auto;
+  width: 90%;
+}
+@media only screen and (max-width: 1138px) {
+  #lpMockBrowser{
+    width: 115.75%;  }
+}
+@media only screen and (max-width: 1037px) {
+  #lpMockBrowser{
+    width: 116%;  }
+}
+@media only screen and (max-width: 953px) {
+  #lpMockBrowser{
+    width: 116.25%;  }
+}
+@media only screen and (max-width: 883px) {
+  #lpMockBrowser{
+    width: 116.5%;  }
+}
+@media only screen and (max-width: 821px) {
+  #lpMockBrowser{
+    width: 116.75%;  }
+}
+@media only screen and (max-width: 768px) {
+  #lpMockBrowser{
+    width: 117%;  }
+}
+@media only screen and (max-width: 767px) {
+  #lpMockBrowser{
+    width: 75%;
+    left: 0;
+    right:0;
+    margin: auto;
+    margin-top: -5em;
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
 
-/* @media only screen and (max-width: 1235px) {
-  #lpMockBrowser{
-    width: 115.5%;;
   }
-} */
-/* @media only screen and (max-width: 1800px) {
-  #lpMockBrowser{
-    width: 114.65%;  }
+  #lpBrowsrerBackground{
+    border-bottom-right-radius: .5em;
+
+  }
+  #lpMockBrowserLine{
+    border-top-right-radius: .5em;
+  }
+  #lpMockBrowserButtonsDiv{
+    border-top-right-radius: .5em;
+  }
+  #lpRightCol{
+    height: 22.5em;
+    text-align: center;
+  }
+  #lpTextDiv{
+    margin-top: 6.66em;
+    font-size: 90%;
+    margin-left: 27.5%;
+  }
+  .lpLeftHeadings{
+    font-size: 192.5%;
+  }
 }
-@media only screen and (max-width: 1730px) {
-  #lpMockBrowser{
-    width: 114.75%;  }
+@media only screen and (max-width: 650px) {
+  #lpTextDiv{
+    margin-top: 6.66em;
+    font-size: small;
+    margin-left: 27.5%;
+  }
+  .lpLeftHeadings{
+    font-size: 1.925em;
+  }
 }
-@media only screen and (max-width: 1600px) {
-  #lpMockBrowser{
-    width: 115%;  }
+@media only screen and (max-width: 575px) {
+  #lpTextDiv{
+    margin-top: 7.5em;
+    font-size: small;
+    margin-left: 20%;
+  }
+  .lpLeftHeadings{
+    font-size: 1.925em;
+  }
 }
-@media only screen and (max-width: 1600px) {
-  #lpMockBrowser{
-    width: 115.5%;  }
-} */
+@media only screen and (max-width: 400px) {
+  #lpTextDiv{
+    margin-top: 12.5em;
+    font-size: xx-small;
+    margin-left: 21%;
+  }
+  .lpLeftHeadings{
+    font-size: 1.925em;
+  }
+}
 

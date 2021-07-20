@@ -1,11 +1,12 @@
 import React from "react";
 import { Image } from 'cloudinary-react';
 import { Col, Row, Container } from 'react-bootstrap';
-import { hinge, bounceInRight, zoomOutDown, zoomIn, fadeInLeft, fadeInDown, flipInX } from 'react-animations';
+import { hinge, bounceInRight, zoomOutDown, zoomIn, fadeInLeft, fadeInDown,fadeIn, flipInX } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 
-const me2="Portfolio/me2_wpbume"
-const me1="Portfolio/me1_tzhqqx"
+const me2 = "Portfolio/me2_wpbume"
+const me1 = "Portfolio/me1_tzhqqx"
+const chiLandscape = "../images/chiSkyline.png"
 
 
 function LandingPage() {
@@ -34,6 +35,10 @@ function LandingPage() {
             animationName: fadeInDown,
             animationDuration: '1s'
         },
+        fadeIn: {
+            animationName: fadeIn,
+            animationDuration: '2.5s'
+        },
         flipInX: {
             animationName: flipInX,
             animationDuration: '2.25s'
@@ -42,6 +47,12 @@ function LandingPage() {
     function MockBrowserClose(e) {
         e.preventDefault();
         document.getElementById("lpMockBrowser").style.display = "none"
+        function showSkyline(){
+            document.getElementById("lpChiSkyline").style.visibility = "visible"
+            document.getElementById("lpChiSkyline").classList.add(css(styles.fadeIn))
+
+        }
+        setTimeout(showSkyline, 1250);
     }
     function MockBrowserMinimize(e) {
         e.preventDefault();
@@ -49,7 +60,13 @@ function LandingPage() {
         function WaitToClose() {
             document.getElementById("lpMockBrowser").style.display = "none"
         }
+        function showSkyline(){
+            document.getElementById("lpChiSkyline").style.visibility = "visible"
+            document.getElementById("lpChiSkyline").classList.add(css(styles.fadeIn))
+
+        }
         setTimeout(WaitToClose, 1000);
+        setTimeout(showSkyline, 2000);
     }
     function MockBrowserExpand(e) {
         e.preventDefault();
@@ -63,17 +80,17 @@ function LandingPage() {
         myImage.style.visibility = "visible"
         myImage.style.marginTop = "10vh"
         myImage.classList.add(css(styles.flipInX))
-        myImage.addEventListener('mouseover', function(){
+        myImage.addEventListener('mouseover', function () {
             myImage.src = "../images/me2.png"
         })
-        myImage.addEventListener('mouseout', function(){
+        myImage.addEventListener('mouseout', function () {
             myImage.src = "../images/me1.png"
         })
     }
-    setTimeout(() => {document.getElementById("lpMockBrowser").style.backgroundColor= "#14213d"}, 1250);
+    setTimeout(() => { document.getElementById("lpMockBrowser").style.backgroundColor = "#14213d" }, 1250);
     setTimeout(showMe1, 2500);
-    setTimeout(() => {document.getElementById("lpBrowsrerBackground").style.opacity = "100%"}, 2500);
-    function Reload (){
+    setTimeout(() => { document.getElementById("lpBrowsrerBackground").style.opacity = "100%" }, 2500);
+    function Reload() {
         window.location.reload()
     }
     return (
@@ -82,22 +99,26 @@ function LandingPage() {
             <Row id="lpRow">
 
                 <Col id="lpRightCol" md={7}>
-                    <div id="lpHomeLink" className={css(styles.fadeInDown)} onClick = {Reload}>
+                    <div id="lpHomeLink" className={css(styles.fadeInDown)} onClick={Reload}>
                         <h5 id="lpAR" >AR</h5>
                     </div>
                     <div id="lpTextDiv" className={css(styles.fadeInLeft)}>
-                        <h2>
+                        <h2 className = "lpLeftHeadings">
                             Hey,
-                </h2>
-                        <h2>
+                        </h2>
+                        <h2 className = "lpLeftHeadings">
                             I'm Aaron,
-                </h2>
-                        <h2>
+                        </h2>
+                        <h2 className = "lpLeftHeadings">
                             a full-stack web developer.
-                </h2>
+                        </h2>
+                        <p id = "lpTechLine"><span>JaveScript</span> / <span>React</span> / <span>NodeJS</span> / <span>Bootstrap</span> / <span>WordPress</span></p>
                     </div>
                 </Col>
                 <Col md={5} style={{ backgroundColor: "#7E5920" }}>
+                <div id = "lpChiDiv">
+                            <img style = {{visibility: "hidden"}} id = "lpChiSkyline" src = {chiLandscape}></img>
+                        </div>
                     <div id="lpMockBrowser" className={css(styles.bounceInRight)} >
                         <div id="lpMockBrowserLine">
                             <div id="lpMockBrowserButtonsDiv">
@@ -112,10 +133,10 @@ function LandingPage() {
                                 </div>
                             </div>
                         </div>
-                        <div id = "lpMeImgDiv">
-                        <img id="me1" src="../images/me1.png" style={{ visibility: "hidden" }}></img>
+                        <div id="lpMeImgDiv">
+                            <img id="me1" src="../images/me1.png" style={{ visibility: "hidden" }}></img>
                         </div>
-                        <div id = "lpBrowsrerBackground">
+                        <div id="lpBrowsrerBackground">
 
                         </div>
                         {/* <div className={css(styles.hinge)} style = {{backgroundColor: "blue", width:"5em", height: "5em"}}></div> */}
