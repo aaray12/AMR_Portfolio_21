@@ -164,7 +164,7 @@ z-index: 1;
   background-image: linear-gradient(#000000, #14213d);
   height: 90.75%;
   border-bottom-left-radius: .5em;
-  /* opacity: 0%; */
+  opacity: 0%;
   transition: opacity 2s
 }
 

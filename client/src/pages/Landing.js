@@ -72,7 +72,7 @@ function LandingPage() {
     }
     setTimeout(() => {document.getElementById("lpMockBrowser").style.backgroundColor= "#14213d"}, 1250);
     setTimeout(showMe1, 2500);
-    // setTimeout(() => {document.getElementById("lpBrowsrerBackground").style.opacity = "100%"}, 2500);
+    setTimeout(() => {document.getElementById("lpBrowsrerBackground").style.opacity = "100%"}, 2500);
     function Reload (){
         window.location.reload()
     }
