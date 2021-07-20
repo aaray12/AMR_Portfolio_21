@@ -113,8 +113,7 @@ function LandingPage() {
                             </div>
                         </div>
                         <div id = "lpMeImgDiv">
-                        {/* <img id="me1" src="https://res.cloudinary.com/aaray/image/upload/v1626735132/Portfolio/me1_tzhqqx.png" style={{ visibility: "hidden" }}></img> */}
-                        <Image id = "me1" cloudName="aaray" publicId={me1} style={{ visibility: "hidden" }}/>
+                        <img id="me1" src="https://res.cloudinary.com/aaray/image/upload/v1626739710/Portfolio/coffee-time-png_91570_bgoq2v.jpg" style={{ visibility: "hidden" }}></img>
                         </div>
                         <div id = "lpBrowsrerBackground">
 
