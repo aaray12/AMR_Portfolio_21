@@ -184,6 +184,70 @@ z-index: 1;
   margin: auto;
   width: 90%;
 }
+#lpBrowserLinks{
+  width: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
+  position: absolute;
+  bottom: 5em;
+  text-align: center;
+  z-index: 1;
+}
+.navBtns{
+  margin:.3em;
+  cursor: pointer;
+}
+#lpAboutBtn{
+  background-color: rgba(177, 152, 71, 0);
+  border: 0px solid rgba(177, 152, 71, 0.057);
+  color: rgba(177, 152, 71, 0.872);
+  visibility: hidden;
+}
+#lpAboutBtn:hover{
+  box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+  background-color: rgba(203, 175, 82, 0.201);
+  border: 1px solid  rgba(177, 152, 71, 0.500);
+  color: rgba(177, 152, 71, 0.879);
+  
+}
+#lpProjectsBtn{
+  background-color: rgba(177, 152, 71, 0);
+  border: 0px solid rgba(177, 152, 71, 0.057);
+  color: rgba(177, 152, 71, 0.872);
+  visibility: hidden;
+}
+#lpProjectsBtn:hover{
+  box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+  background-color: rgba(203, 175, 82, 0.201);
+  border: 1px solid  rgba(177, 152, 71, 0.500);
+  color: rgba(177, 152, 71, 0.879);
+}
+#lpContactBtn{
+  background-color: rgba(177, 152, 71, 0);
+  border: 0px solid rgba(177, 152, 71, 0.057);
+  color: rgba(177, 152, 71, 0.872);
+  visibility: hidden;
+}
+#lpContactBtn:hover{
+  box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+  background-color: rgba(203, 175, 82, 0.201);
+  border: 1px solid  rgba(177, 152, 71, 0.500);
+  color: rgba(177, 152, 71, 0.879);
+  
+}
+#lpBlogBtn{
+  background-color: rgba(177, 152, 71, 0);
+  border: 0px solid rgba(177, 152, 71, 0.057);
+  color: rgba(177, 152, 71, 0.872);
+  visibility: hidden;
+}
+#lpBlogBtn:hover{
+  box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+  background-color: rgba(203, 175, 82, 0.201);
+  border: 1px solid  rgba(177, 152, 71, 0.500);
+  color: rgba(177, 152, 71, 0.879);
+  
+}
+
 @media only screen and (max-width: 1138px) {
   #lpMockBrowser{
     width: 115.75%;  }
@@ -260,6 +324,19 @@ z-index: 1;
   }
   .lpLeftHeadings{
     font-size: 1.925em;
+  }
+  #lpBrowserLinks{
+    width: 75%;
+    margin-left:12%;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    z-index: 1;
+  }
+  #lpMeImgDiv{
+    position: absolute;
+    margin-top: -1.75em;
   }
 }
 @media only screen and (max-width: 400px) {

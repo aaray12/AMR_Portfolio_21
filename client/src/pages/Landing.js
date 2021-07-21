@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from 'cloudinary-react';
-import { Col, Row, Container } from 'react-bootstrap';
-import { hinge, bounceInRight, zoomOutDown, zoomIn, fadeInLeft, fadeInDown,fadeIn, flipInX } from 'react-animations';
+import { Col, Row, Container, Button } from 'react-bootstrap';
+import { hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp, fadeInLeft, fadeInDown,fadeIn, flipInX } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 
 const me2 = "Portfolio/me2_wpbume"
@@ -26,6 +26,10 @@ function LandingPage() {
         zoomIn: {
             animationName: zoomIn,
             animationDuration: '1s'
+        },
+        zoomInUp: {
+            animationName: zoomInUp,
+            animationDuration: '3.33s'
         },
         fadeInLeft: {
             animationName: fadeInLeft,
@@ -87,12 +91,38 @@ function LandingPage() {
             myImage.src = "../images/me1.png"
         })
     }
-    setTimeout(() => { document.getElementById("lpMockBrowser").style.backgroundColor = "#14213d" }, 1250);
-    setTimeout(showMe1, 2500);
-    setTimeout(() => { document.getElementById("lpBrowsrerBackground").style.opacity = "100%" }, 2500);
+    function showAboutBtn(){
+        document.getElementById('lpAboutBtn').style.visibility = "visible"
+        document.getElementById('lpAboutBtn').classList.add(css(styles.zoomInUp))
+    }
+    function showProjectsBtn(){
+        document.getElementById('lpProjectsBtn').style.visibility = "visible"
+        document.getElementById('lpProjectsBtn').classList.add(css(styles.zoomInUp))
+    }
+    function showContactBtn(){
+        document.getElementById('lpContactBtn').style.visibility = "visible"
+        document.getElementById('lpContactBtn').classList.add(css(styles.zoomInUp))
+    }
+    function showBlogBtn(){
+        document.getElementById('lpBlogBtn').style.visibility = "visible"
+        document.getElementById('lpBlogBtn').classList.add(css(styles.zoomInUp))
+    }
     function Reload() {
         window.location.reload()
     }
+
+    setTimeout(() => { document.getElementById("lpMockBrowser").style.backgroundColor = "#14213d" }, 1250);
+    setTimeout(showMe1, 2500);
+    setTimeout(() => { document.getElementById("lpBrowsrerBackground").style.opacity = "100%" }, 2500);
+    setTimeout(() => { document.getElementById("lpBrowsrerBackground").style.opacity = "100%" }, 2500);
+    setTimeout(showAboutBtn, 2000);
+    setTimeout(showProjectsBtn, 2250);
+    setTimeout(showBlogBtn, 2500);
+    setTimeout(showContactBtn, 2750);
+
+
+
+
     return (
         //heroku test automatic deploy
         <div >
@@ -135,6 +165,12 @@ function LandingPage() {
                         </div>
                         <div id="lpMeImgDiv">
                             <img id="me1" src="../images/me1.png" style={{ visibility: "hidden" }}></img>
+                        </div>
+                        <div id ="lpBrowserLinks">
+                            <Button className="navBtns" id = "lpAboutBtn">About</Button>
+                            <Button className="navBtns" id = "lpProjectsBtn">Projects</Button>
+                            <Button className="navBtns" id = "lpBlogBtn">Blog</Button>
+                            <Button className="navBtns" id = "lpContactBtn">Contact</Button>
                         </div>
                         <div id="lpBrowsrerBackground">
 
