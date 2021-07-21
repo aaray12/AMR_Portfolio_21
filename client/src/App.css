@@ -167,9 +167,6 @@ z-index: 1;
   opacity: 0%;
   transition: opacity 2s
 }
-#lpTechLine{
-  color: #79726c;
-}
 #lpChiDiv{
   position: absolute;
   margin: auto;
@@ -246,6 +243,18 @@ z-index: 1;
   border: 1px solid  rgba(177, 152, 71, 0.500);
   color: rgba(177, 152, 71, 0.879);
   
+}
+#lpTechLine{
+  color: #79726c;
+  cursor: default;
+}
+.lpTechList{
+  color: #79726c;
+
+}
+.lpTechList:hover{
+  color: #D1A617;
+  cursor: none;
 }
 #hInHey:hover{
 color: tomato;

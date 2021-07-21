@@ -2,7 +2,7 @@ import React from "react";
 import { Image } from 'cloudinary-react';
 import { Col, Row, Container, Button } from 'react-bootstrap';
 import { hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp,zoomOut,
-        fadeInLeft, fadeInDown,fadeIn, flipInX, headShake, pulse } from 'react-animations';
+        fadeInLeft, fadeInDown,fadeIn, flipInX, headShake, pulse, tada } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 
 const me2 = "Portfolio/me2_wpbume"
@@ -18,6 +18,10 @@ function LandingPage() {
         },
         headShake: {
             animationName: headShake,
+            animationDuration: '1s'
+        },
+        tada: {
+            animationName: tada,
             animationDuration: '1s'
         },
         bounceInRight: {
@@ -38,7 +42,7 @@ function LandingPage() {
         },
         zoomOut: {
             animationName: zoomOut,
-            animationDuration: '.5s'
+            animationDuration: '.75s'
         },
         zoomInUp: {
             animationName: zoomInUp,
@@ -146,9 +150,12 @@ function LandingPage() {
         document.getElementById('lpImAaron').classList.remove(css(styles.pulse))
     }
     function fsdZooms(){
-        document.getElementById('fsdA').classList.add(css(styles.zoomOut))
-        setTimeout(()=>{document.getElementById('fsdA').style.visibility = "hidden"}, 500)
-        setTimeout(()=>{document.getElementById('fsdA').style.visibility = "visible"; document.getElementById('fsdA').classList.add(css(styles.zoomIn))}, 750)
+        document.getElementById('aFSDeveloper').classList.add(css(styles.tada))
+
+
+    }
+    function fsdZoomsOut(){
+        document.getElementById('aFSDeveloper').classList.remove(css(styles.tada))
     }
     return (
         //heroku test automatic deploy
@@ -167,9 +174,9 @@ function LandingPage() {
                            <div id = "lpImAaron" onMouseOver = { imAaBounce} onMouseOut = {imAaBounceOut}>I'm Aaron,</div>
                         </h2>
                         <h2 className = "lpLeftHeadings">
-                           <div id = "aFSDeveloper" onMouseOver = { fsdZooms}><span id = "fsdA">a</span> <span id = "fsdFull">full</span><span id = "fsd-">-</span><span id = "fsdStack">stack</span> <span id = "fsdWeb">web</span> <span id = "fsdDev">developer</span><span id = "fsdPeriod">.</span></div> 
+                           <div id = "aFSDeveloper" onMouseOver = { fsdZooms} onMouseOut = {fsdZoomsOut}><span id = "fsdA">a</span> <span id = "fsdFull">full</span><span id = "fsd-">-</span><span id = "fsdStack">stack</span> <span id = "fsdWeb">web</span> <span id = "fsdDev">developer</span><span id = "fsdPeriod">.</span></div> 
                         </h2>
-                        <p id = "lpTechLine"><span>JaveScript</span> / <span>React</span> / <span>NodeJS</span> / <span>Bootstrap</span> / <span>WordPress</span></p>
+                        <p id = "lpTechLine"><span className = "lpTechList">JaveScript</span> / <span className = "lpTechList">React</span> / <span className = "lpTechList">NodeJS</span> / <span className = "lpTechList">Bootstrap</span> / <span className = "lpTechList">WordPress</span></p>
                     </div>
                 </Col>
                 <Col md={5} style={{ backgroundColor: "#7E5920" }}>
