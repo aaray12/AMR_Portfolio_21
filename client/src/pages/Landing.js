@@ -1,7 +1,8 @@
 import React from "react";
 import { Image } from 'cloudinary-react';
 import { Col, Row, Container, Button } from 'react-bootstrap';
-import { hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp, fadeInLeft, fadeInDown,fadeIn, flipInX } from 'react-animations';
+import { hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp,zoomOut,
+        fadeInLeft, fadeInDown,fadeIn, flipInX, headShake, pulse } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 
 const me2 = "Portfolio/me2_wpbume"
@@ -15,9 +16,17 @@ function LandingPage() {
             animationName: hinge,
             animationDuration: '2s'
         },
+        headShake: {
+            animationName: headShake,
+            animationDuration: '1s'
+        },
         bounceInRight: {
             animationName: bounceInRight,
             animationDuration: '1.5s'
+        },
+       pulse: {
+            animationName:pulse,
+            animationDuration: '1s'
         },
         zoomOutDown: {
             animationName: zoomOutDown,
@@ -26,6 +35,10 @@ function LandingPage() {
         zoomIn: {
             animationName: zoomIn,
             animationDuration: '1s'
+        },
+        zoomOut: {
+            animationName: zoomOut,
+            animationDuration: '.5s'
         },
         zoomInUp: {
             animationName: zoomInUp,
@@ -120,9 +133,23 @@ function LandingPage() {
     setTimeout(showBlogBtn, 2500);
     setTimeout(showContactBtn, 2750);
 
-
-
-
+    function heyShake(){
+        document.getElementById('lpHey').classList.add(css(styles.headShake))
+    }
+    function heyShakeOut(){
+        document.getElementById('lpHey').classList.remove(css(styles.headShake))
+    }
+    function imAaBounce(){
+        document.getElementById('lpImAaron').classList.add(css(styles.pulse))
+    }
+    function imAaBounceOut(){
+        document.getElementById('lpImAaron').classList.remove(css(styles.pulse))
+    }
+    function fsdZooms(){
+        document.getElementById('fsdA').classList.add(css(styles.zoomOut))
+        setTimeout(()=>{document.getElementById('fsdA').style.visibility = "hidden"}, 500)
+        setTimeout(()=>{document.getElementById('fsdA').style.visibility = "visible"; document.getElementById('fsdA').classList.add(css(styles.zoomIn))}, 750)
+    }
     return (
         //heroku test automatic deploy
         <div >
@@ -134,13 +161,13 @@ function LandingPage() {
                     </div>
                     <div id="lpTextDiv" className={css(styles.fadeInLeft)}>
                         <h2 className = "lpLeftHeadings">
-                            Hey,
+                            <div id = "lpHey" onMouseOver = { heyShake} onMouseOut = {heyShakeOut} ><span id = "hInHey">H</span>ey,</div>
                         </h2>
                         <h2 className = "lpLeftHeadings">
-                            I'm Aaron,
+                           <div id = "lpImAaron" onMouseOver = { imAaBounce} onMouseOut = {imAaBounceOut}>I'm Aaron,</div>
                         </h2>
                         <h2 className = "lpLeftHeadings">
-                            a full-stack web developer.
+                           <div id = "aFSDeveloper" onMouseOver = { fsdZooms}><span id = "fsdA">a</span> <span id = "fsdFull">full</span><span id = "fsd-">-</span><span id = "fsdStack">stack</span> <span id = "fsdWeb">web</span> <span id = "fsdDev">developer</span><span id = "fsdPeriod">.</span></div> 
                         </h2>
                         <p id = "lpTechLine"><span>JaveScript</span> / <span>React</span> / <span>NodeJS</span> / <span>Bootstrap</span> / <span>WordPress</span></p>
                     </div>
