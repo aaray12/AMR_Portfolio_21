@@ -390,9 +390,10 @@
     }
     #lpMockBrowser{
       width: 75%;
-      left: 0;
-      right:0;
+      /* left: 0;
+      right:0; */
       margin: auto;
+      margin-left: 25%;
       margin-top: -5em;
       border-bottom-right-radius: .5em;
       border-top-right-radius: .5em;
