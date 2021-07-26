@@ -315,6 +315,14 @@
   #hInHey:hover{
   color: tomato;
   }
+  #miniBrowser{
+    width: 5em;
+    position: absolute;
+    bottom: 1em;
+    right: 3em;
+    visibility: hidden;
+    cursor: pointer;
+  }
   @media only screen and (max-width: 1138px) {
     #lpMockBrowser{
       width: 115.75%;  }

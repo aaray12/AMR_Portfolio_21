@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Row, Container, Button } from 'react-bootstrap';
 import {
-    hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp, zoomOut,
-    fadeInLeft, fadeInDown, fadeIn, flipInX, headShake, pulse, tada
+    hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp, zoomOut, fadeOut,
+    fadeInLeft, fadeInDown, fadeInUp, fadeIn, flipInX, headShake, pulse, tada
 } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import "./pagesCss/Landing.css"
@@ -50,6 +50,10 @@ function LandingPage() {
             animationName: zoomInUp,
             animationDuration: '3.33s'
         },
+        fadeOut: {
+            animationName: fadeOut,
+            animationDuration: '1s'
+        },
         fadeInLeft: {
             animationName: fadeInLeft,
             animationDuration: '1s'
@@ -60,8 +64,13 @@ function LandingPage() {
         },
         fadeIn: {
             animationName: fadeIn,
-            animationDuration: '2.5s'
+            animationDuration: '1s'
         },
+        fadeInUp: {
+            animationName: fadeInUp,
+            animationDuration: '1s'
+        },
+
         flipInX: {
             animationName: flipInX,
             animationDuration: '2.25s'
@@ -79,21 +88,47 @@ function LandingPage() {
     }
     function MockBrowserMinimize(e) {
         e.preventDefault();
+        document.getElementById("lpMockBrowser").classList.remove(css(styles.fadeInUp))
         document.getElementById("lpMockBrowser").classList.add(css(styles.zoomOutDown))
         function WaitToClose() {
             document.getElementById("lpMockBrowser").style.display = "none"
+            document.getElementById("miniBrowser").style.visibility = "visible"
+            document.getElementById("miniBrowser").classList.remove(css(styles.zoomOutDown))
+            document.getElementById("miniBrowser").classList.add(css(styles.fadeInUp))
         }
         function showSkyline() {
             document.getElementById("lpChiSkyline").style.visibility = "visible"
+            document.getElementById("lpChiSkyline").classList.remove(css(styles.fadeOut))
             document.getElementById("lpChiSkyline").classList.add(css(styles.fadeIn))
             document.getElementById("lpBrowserLinks2").style.visibility = "visible"
+            document.getElementById("lpBrowserLinks2").classList.remove(css(styles.fadeOut))
             document.getElementById("lpBrowserLinks2").classList.add(css(styles.fadeIn))
             document.getElementById("lpChiBorder").style.visibility = "visible"
+            document.getElementById("lpChiBorder").classList.remove(css(styles.fadeOut))
             document.getElementById("lpChiBorder").classList.add(css(styles.fadeIn))
         }
         setTimeout(WaitToClose, 1000);
         setTimeout(showSkyline, 2000);
     }
+    function MockBrowserReverseMinimize(){
+        document.getElementById("miniBrowser").classList.remove(css(styles.fadeInUp))
+        document.getElementById("miniBrowser").classList.add(css(styles.zoomOutDown))
+        function expandBrowser(){
+            document.getElementById("miniBrowser").style.visibility = "hidden"
+            document.getElementById("lpMockBrowser").style.display = "inline-block"
+            document.getElementById("lpMockBrowser").classList.remove(css(styles.zoomOutDown))
+            document.getElementById("lpMockBrowser").classList.add(css(styles.fadeInUp))
+            document.getElementById("lpBrowserLinks2").classList.remove(css(styles.fadeIn))
+            document.getElementById("lpBrowserLinks2").classList.add(css(styles.fadeOut))
+            document.getElementById("lpChiBorder").classList.remove(css(styles.fadeOut))
+            document.getElementById("lpChiBorder").classList.add(css(styles.fadeOut))
+            document.getElementById("lpChiSkyline").classList.remove(css(styles.fadeIn))
+            document.getElementById("lpChiSkyline").classList.add(css(styles.fadeOut))
+            setTimeout(()=>{ document.getElementById("lpBrowserLinks2").style.visibility = "hidden";document.getElementById("lpChiBorder").style.visibility = "hidden";document.getElementById("lpChiSkyline").style.visibility = "hidden"}, 1000);
+        }
+        setTimeout(expandBrowser, 1000);
+    }
+
     function MockBrowserExpand(e) {
         e.preventDefault();
         document.getElementById("lpMockBrowser").style.width = "191.5vh"
@@ -235,6 +270,7 @@ function LandingPage() {
                         {/* <div className={css(styles.hinge)} style = {{backgroundColor: "blue", width:"5em", height: "5em"}}></div> */}
                     </div>
                     <div style={{ height: "3em" }} >
+                        <img id = "miniBrowser" src = "./images/mini_browser.png" onClick={MockBrowserReverseMinimize}></img>
                     </div>
                 </Col>
             </Row>
