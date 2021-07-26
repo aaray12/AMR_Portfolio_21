@@ -132,7 +132,18 @@ function LandingPage() {
     function Reload() {
         window.location.reload()
     }
-
+    function toAbout(){
+        document.location.href = "/about"
+    }
+    function toBlog(){
+        document.location.href = "/blog"
+    }
+    function toContact(){
+        document.location.href = "/contact"
+    }
+    function toProjects(){
+        document.location.href = "/projects"
+    }
     setTimeout(() => { document.getElementById("lpMockBrowser").style.backgroundColor = "#14213d" }, 1250);
     setTimeout(showMe1, 2500);
     setTimeout(() => { document.getElementById("lpBrowsrerBackground").style.opacity = "100%" }, 2500);
@@ -189,10 +200,10 @@ function LandingPage() {
                         <img style={{ visibility: "hidden" }} id="lpChiSkyline" src={chiLandscape}></img>
                         <div id = "lpChiBorder" ></div>
                         <div id="lpBrowserLinks2" style = {{visibility: "hidden"}}>
-                        <Button className="navBtns2" id = "lpAboutBtn2">About</Button>
-                        <Button className="navBtns2" id= "lpProjectsBtn2">Projects</Button>
-                        <Button className="navBtns2" id= "lpBlogBtn2">Blog</Button>
-                        <Button className="navBtns2" id= "lpContactBtn2">Contact</Button>
+                        <Button className="navBtns2" id = "lpAboutBtn2" onClick={toAbout}>About</Button>
+                        <Button className="navBtns2" id= "lpProjectsBtn2" onClick={toProjects}>Projects</Button>
+                        <Button className="navBtns2" id= "lpBlogBtn2" onClick={toBlog}>Blog</Button>
+                        <Button className="navBtns2" id= "lpContactBtn2" onClick={toContact}>Contact</Button>
                     </div>
                     </div>
                     <div id="lpMockBrowser" className={css(styles.bounceInRight)} >
@@ -213,10 +224,10 @@ function LandingPage() {
                             <img id="me1" src="../images/me1.png" style={{ visibility: "hidden" }}></img>
                         </div>
                         <div id="lpBrowserLinks">
-                            <Button className="navBtns" id="lpAboutBtn">About</Button>
-                            <Button className="navBtns" id="lpProjectsBtn">Projects</Button>
-                            <Button className="navBtns" id="lpBlogBtn">Blog</Button>
-                            <Button className="navBtns" id="lpContactBtn">Contact</Button>
+                            <Button className="navBtns" id="lpAboutBtn" onClick={toAbout}>About</Button>
+                            <Button className="navBtns" id="lpProjectsBtn" onClick={toProjects}>Projects</Button>
+                            <Button className="navBtns" id="lpBlogBtn" onClick={toBlog}>Blog</Button>
+                            <Button className="navBtns" id="lpContactBtn" onClick={toContact}>Contact</Button>
                         </div>
                         <div id="lpBrowsrerBackground">
 
