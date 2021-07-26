@@ -1,11 +1,11 @@
 import React from "react";
-import { Image } from 'cloudinary-react';
 import { Col, Row, Container, Button } from 'react-bootstrap';
 import {
     hinge, bounceInRight, zoomOutDown, zoomIn, zoomInUp, zoomOut,
     fadeInLeft, fadeInDown, fadeIn, flipInX, headShake, pulse, tada
 } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
+import "./pagesCss/Landing.css"
 
 const me2 = "Portfolio/me2_wpbume"
 const me1 = "Portfolio/me1_tzhqqx"

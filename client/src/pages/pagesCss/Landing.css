@@ -1,0 +1,484 @@
+#lpMockBrowser{
+    position: relative;
+    right:13%;
+    width: 115.5%;
+    height: 60vh;
+    margin-top: 17.5vh;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .5em;
+    border-top-right-radius: 0em ;
+    border-bottom-right-radius: 0em ;
+    z-index: 1;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: width 1s, height 1s, right 1s linear, margin-top 1s, background-color 1.25s linear;
+  }
+  #lpMockBrowserLine{
+    width: 100%;
+    height: 2.5em;
+    /* background-color: #376477; */
+    background-image: linear-gradient(#527989, #376477);
+    /* border-bottom: 2px solid grey; */
+    border-top-left-radius: .5em;
+    border-top-right-radius: 0em;
+    text-align: left;
+  }
+  #lpRow{
+    height: 100vh;
+  }
+  #lpRightCol{
+    background-color:#343330;
+    
+    text-align: center;
+  }
+  
+  .lpMockBrowserButtons{
+    display: inline-block;
+    width: .75em;
+    height: .75em;
+    border-radius: 10px;
+    margin:.25em;
+    margin-top:.8em;
+    cursor: pointer;
+  }
+  #lpTextDiv{
+    text-align: left;
+    margin-left: 17%;
+    margin-top: 33vh;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* color: #a0833a; */
+    color: #D1A617;
+  }
+  #lpMockBrowserRedButtonX{
+    color: #fe5b52;
+    font-size: .8em;
+    position: relative;
+    left: .2em;
+    bottom: .275em;
+  }
+  #lpMockBrowserRedButtonX:hover{
+    color: #990000;
+    font-size: .8em;
+    position: relative;
+    left: .225em;
+    bottom: .3em;
+  }
+  #lpMockBrowserRedButton{
+    position: relative;
+    bottom: .75em;
+  }
+  #lpMockBrowserYellowButton-{
+    font-size: x-large;
+    position: relative;
+    bottom: .6em;
+    left: .03em;
+    color: #e6c028;
+  }
+  #lpMockBrowserYellowButton-:hover{
+    font-size: x-large;
+    position: relative;
+    bottom: .6em;
+    /* left: .04em; */
+    color: #7f5a00;
+  }
+  #lpMockBrowserYellowButton{
+    position: relative;
+    top:.08em
+  }
+  #lpMockBrowserGreenButtonV{
+    position: relative;
+    bottom: .2em;
+    text-align: center;
+    color:#54c22a
+  }
+  #lpMockBrowserGreenButtonV:hover{
+    position: relative;
+    bottom: .2em;
+    text-align: center;
+    color:#025b00
+  }
+  #lpMockBrowserGreenButton{
+    position: relative;
+    bottom: .49em;
+  }
+  #lpHomeLink{
+    position: absolute;
+    background-color: #7E5920;
+    text-align: left;
+    border-width:3px;  
+    border-style:double;
+    border-color: #D1A617;
+    border-radius: 1.5em;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 1.5em;
+    margin-left: 10%;
+  }
+  #lpHomeLink:hover{
+    cursor: pointer;
+    width: 3.2em;
+    height: 3.2em;
+    border-width:4px;  
+    border-radius: 1.5em;
+  }
+  #lpAR{
+    color: white;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: .3em;
+  }
+  #lpAR:hover{
+    font-size: x-large;
+    margin-top: .3em;
+  }
+  #lpMeImgDiv{
+    position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  z-index: 1;
+  }
+  #me1{
+    width: 22.5vh;
+    border-radius: 10em;
+    margin-top: 0%;
+    border: 2px solid rgba(177, 152, 71, .500);
+    box-shadow: 0 0px 20px 0 rgba(177, 152, 71, 0.338), 0 0px 20px 0 rgba(177, 152, 71, 0.338);
+    background-color: rgba(177, 152, 71, 0.250);
+    transition: height 1s, right 1s linear, margin-top 2s, background-color .25s linear, box-shadow .25s linear;
+    /* opacity: 100%; */
+    /* left: 32.5vh; */
+    /* z-index: 2; */
+  }
+  #me1:hover{
+    width: 33%;
+    box-shadow: 0 0px 30px 0 rgba(177, 152, 71, 0.500), 0 0px 30px 0 rgba(177, 152, 71, 0.500);
+    background-color: rgba(177, 152, 71, 0.500);
+  
+    cursor: pointer;
+  
+  }
+  
+  #lpBrowsrerBackground{
+    background-image: linear-gradient(#000000, #14213d);
+    height: 90.75%;
+    border-bottom-left-radius: .5em;
+    opacity: 0%;
+    transition: opacity 2s
+  }
+  #lpChiDiv{
+    position: absolute;
+    margin: auto;
+    width: 42.3%;
+    margin-left: -.8em;
+    padding-left: 1em;
+    text-align: center;
+    margin-top: 22.5vh;
+  
+  }
+  #lpChiSkyline{
+    margin: auto;
+    width: 90%;
+  }
+  #lpChiBorder{
+    margin: auto;
+    margin-top: -10vh;
+    width: 66%;
+    border-bottom: 1.75px solid #343330;
+    border-radius: 1em;
+    visibility: hidden;
+  }
+  #lpBrowserLinks{
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    bottom: 5em;
+    text-align: center;
+    z-index: 1;
+  }
+  .navBtns{
+    margin:.3em;
+    cursor: pointer;
+  }
+  #lpAboutBtn{
+    background-color: rgba(177, 152, 71, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color: rgba(177, 152, 71, 0.872);
+    visibility: hidden;
+  }
+  #lpAboutBtn:hover{
+    box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+    background-color: rgba(203, 175, 82, 0.201);
+    border: 1px solid  rgba(177, 152, 71, 0.500);
+    color: rgba(177, 152, 71, 0.879);
+    
+  }
+  #lpProjectsBtn{
+    background-color: rgba(177, 152, 71, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color: rgba(177, 152, 71, 0.872);
+    visibility: hidden;
+  }
+  #lpProjectsBtn:hover{
+    box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+    background-color: rgba(203, 175, 82, 0.201);
+    border: 1px solid  rgba(177, 152, 71, 0.500);
+    color: rgba(177, 152, 71, 0.879);
+  }
+  #lpContactBtn{
+    background-color: rgba(177, 152, 71, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color: rgba(177, 152, 71, 0.872);
+    visibility: hidden;
+  }
+  #lpContactBtn:hover{
+    box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+    background-color: rgba(203, 175, 82, 0.201);
+    border: 1px solid  rgba(177, 152, 71, 0.500);
+    color: rgba(177, 152, 71, 0.879);
+    
+  }
+  #lpBlogBtn{
+    background-color: rgba(177, 152, 71, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color: rgba(177, 152, 71, 0.872);
+    visibility: hidden;
+  }
+  #lpBlogBtn:hover{
+    box-shadow: 0 0px 10px 0 rgba(177, 152, 71, 0.500), 0 0px 10px 0 rgba(177, 152, 71, 0.500);
+    background-color: rgba(203, 175, 82, 0.201);
+    border: 1px solid  rgba(177, 152, 71, 0.500);
+    color: rgba(177, 152, 71, 0.879);
+    
+  }
+  #lpBrowserLinks2{
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+    margin: auto;
+    margin-top: 2vh;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+  .navBtns2{
+    margin:.3em;
+    cursor: pointer;
+  }
+  #lpAboutBtn2{
+    background-color: rgba(255, 15, 15, 0);
+    border: 0px solid rgba(255, 255, 255, 0.057);
+    color: #343330;
+  }
+  #lpAboutBtn2:hover{
+    background-color:rgba(27, 29, 40, 0.194);
+    color: #232326;
+  }
+  #lpProjectsBtn2{
+    background-color: rgba(177, 152, 71, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color: #343330;
+  }
+  #lpProjectsBtn2:hover{
+    background-color:rgba(27, 29, 40, 0.194);
+    color: #232326;
+  }
+  #lpContactBtn2{
+    background-color: rgba(177, 152, 71, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color:#343330;
+  }
+  #lpContactBtn2:hover{
+    background-color:rgba(27, 29, 40, 0.194);
+    color: #232326;
+  }
+  #lpBlogBtn2{
+    background-color: rgba(184, 167, 110, 0);
+    border: 0px solid rgba(177, 152, 71, 0.057);
+    color:#343330;
+  }
+  #lpBlogBtn2:hover{
+    background-color:rgba(27, 29, 40, 0.194);
+    color: #232326;
+  }
+  #lpTechLine{
+    color: #79726c;
+    cursor: default;
+  }
+  .lpTechList{
+    color: #79726c;
+  
+  }
+  .lpTechList:hover{
+    color: #D1A617;
+    cursor: none;
+  }
+  #hInHey:hover{
+  color: tomato;
+  }
+  @media only screen and (max-width: 1138px) {
+    #lpMockBrowser{
+      width: 115.75%;  }
+      #lpChiBorder{
+        margin-top: -4em;
+            }
+  }
+  @media only screen and (max-width: 1037px) {
+    #lpMockBrowser{
+      width: 116%;  }
+  }
+  @media only screen and (max-width: 953px) {
+    #lpMockBrowser{
+      width: 116.25%;  }
+      #lpChiBorder{
+        margin-top: -3.5em;
+      }
+      #lpAboutBtn2{
+        font-size: smaller;
+      }
+      #lpProjectsBtn2{
+        font-size: smaller;
+      }
+      #lpBlogBtn2{
+        font-size: smaller;
+      }
+      #lpContactBtn2{
+        font-size: smaller;
+      }
+  }
+  @media only screen and (max-width: 883px) {
+    #lpMockBrowser{
+      width: 116.5%;  }
+      #lpChiBorder{
+        margin-top: -3em;
+            }
+  }
+  @media only screen and (max-width: 821px) {
+    #lpMockBrowser{
+      width: 116.75%;  }
+  }
+  @media only screen and (max-width: 768px) {
+    #lpMockBrowser{
+      width: 117%;  }
+  }
+  @media only screen and (max-width: 767px) {
+    #lpChiDiv{
+      align-content: center;
+      position: absolute;
+      top: 22em;
+      left: 11.5%;
+      margin: auto;
+      width: 80%;
+      text-align: center;
+    
+    }
+    #lpAboutBtn2{
+      font-size: large;
+    }
+    #lpProjectsBtn2{
+      font-size: large;
+    }
+    #lpBlogBtn2{
+      font-size: large;
+    }
+    #lpContactBtn2{
+      font-size: large;
+    }
+    #lpMockBrowser{
+      width: 75%;
+      left: 0;
+      right:0;
+      margin: auto;
+      margin-top: -5em;
+      border-bottom-right-radius: .5em;
+      border-top-right-radius: .5em;
+  
+    }
+    #lpBrowsrerBackground{
+      border-bottom-right-radius: .5em;
+  
+    }
+    #lpMockBrowserLine{
+      border-top-right-radius: .5em;
+    }
+    #lpMockBrowserButtonsDiv{
+      border-top-right-radius: .5em;
+    }
+    #lpRightCol{
+      height: 22.5em;
+      text-align: center;
+    }
+    #lpTextDiv{
+      margin-top: 6.66em;
+      font-size: 90%;
+      margin-left: 27.5%;
+    }
+    .lpLeftHeadings{
+      font-size: 192.5%;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    #lpTextDiv{
+      margin-top: 6.66em;
+      font-size: small;
+      margin-left: 27.5%;
+    }
+    .lpLeftHeadings{
+      font-size: 1.925em;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    #lpTextDiv{
+      margin-top: 7.5em;
+      font-size: small;
+      margin-left: 20%;
+    }
+    .lpLeftHeadings{
+      font-size: 1.925em;
+    }
+    #lpBrowserLinks{
+      width: 75%;
+      margin-left:12%;
+      font-family: 'Nanum Gothic', sans-serif;
+      position: absolute;
+      bottom: 10%;
+      text-align: center;
+      z-index: 1;
+    }
+    #lpMeImgDiv{
+      position: absolute;
+      margin-top: -1.75em;
+    }
+    #lpChiDiv{
+      align-content: center;
+      position: absolute;
+      top: 22em;
+      left: 10%;
+      margin: auto;
+      width: 80%;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #lpTextDiv{
+      margin-top: 12.5em;
+      font-size: xx-small;
+      margin-left: 21%;
+    }
+    .lpLeftHeadings{
+      font-size: 1.925em;
+    }
+    #lpAboutBtn2{
+      font-size: 1.25em;
+    }
+    #lpProjectsBtn2{
+      font-size: 1.25em;
+    }
+    #lpBlogBtn2{
+      font-size: 1.25em;
+    }
+    #lpContactBtn2{
+      font-size: 1.25em;
+    }
+  }
+  
+  
