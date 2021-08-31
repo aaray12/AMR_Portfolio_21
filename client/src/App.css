@@ -1,6 +1,10 @@
 
 #navBar{
   background-color: #343330;
+  border-bottom: 1.5px solid #d1a6177c;
+  box-shadow: 0 5px 4px -6px black;
+  font-family: 'Nanum Gothic', sans-serif;
+
 }
 #navAbout{
   color: #D1A617;
