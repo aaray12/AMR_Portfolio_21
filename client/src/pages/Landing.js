@@ -128,13 +128,58 @@ function LandingPage() {
         }
         setTimeout(expandBrowser, 1000);
     }
-
+var clicked = false
     function MockBrowserExpand(e) {
         e.preventDefault();
-        document.getElementById("lpMockBrowser").style.width = "191.5vh"
+        if(clicked == false){
+        clicked = true;
+        if(window.innerWidth <=777){
+            document.getElementById("lpMockBrowser").style.width = "100%"
+            document.getElementById("lpMockBrowser").style.top = "-17.5em"
+            document.getElementById("lpMockBrowser").style.right = "25%"
+            document.getElementById("lpMockBrowser").style.height = "100vh"
+            document.getElementById("miniBrowserDiv").style.height = "0em"
+            document.getElementById("me1").style.width = "40vh"
+            document.getElementById("lpContactBtn").style.fontSize = "200%"
+
+            document.getElementById("lpBlogBtn").style.fontSize = "200%"
+            document.getElementById("lpProjectsBtn").style.fontSize = "200%"
+            document.getElementById("lpAboutBtn").style.fontSize = "200%"
+        }
+        else{
+        document.getElementById("lpMockBrowser").style.width = "247.5%"
         document.getElementById("lpMockBrowser").style.height = "100vh"
         document.getElementById("lpMockBrowser").style.marginTop = "0em"
-        document.getElementById("lpMockBrowser").style.right = "46.25em"
+        document.getElementById("lpMockBrowser").style.right = "146%"
+        document.getElementById("miniBrowserDiv").style.height = "0em"
+        document.getElementById("lpMeImgDiv").style.marginTop = "5%"
+        document.getElementById("me1").style.width = "40vh"
+        document.getElementById("lpContactBtn").style.fontSize = "200%"
+        document.getElementById("lpBlogBtn").style.fontSize = "200%"
+        document.getElementById("lpProjectsBtn").style.fontSize = "200%"
+        document.getElementById("lpAboutBtn").style.fontSize = "200%"
+        }
+    }
+        else if (clicked == true){
+            clicked = false
+            document.getElementById("lpMockBrowser").style.width = null
+            document.getElementById("lpMockBrowser").style.height = null
+            document.getElementById("lpMockBrowser").style.marginTop = null
+            document.getElementById("lpMockBrowser").style.right = null
+            document.getElementById("miniBrowserDiv").style.height = null
+            document.getElementById("lpMeImgDiv").style.marginTop = null
+            document.getElementById("me1").style.width = null
+            document.getElementById("lpContactBtn").style.fontSize = null
+            document.getElementById("lpBlogBtn").style.fontSize = null
+            document.getElementById("lpProjectsBtn").style.fontSize = null
+            document.getElementById("lpAboutBtn").style.fontSize = null
+            document.getElementById("lpMockBrowser").style.top = null
+
+
+        }
+        
+
+        console.log(window.innerWidth)
     }
     function showMe1() {
         const myImage = document.getElementById("me1")
@@ -230,7 +275,7 @@ function LandingPage() {
                         <p id="lpTechLine"><span className="lpTechList">JaveScript</span> / <span className="lpTechList">React</span> / <span className="lpTechList">NodeJS</span> / <span className="lpTechList">Bootstrap</span> / <span className="lpTechList">WordPress</span></p>
                     </div>
                 </Col>
-                <Col md={5} style={{ backgroundColor: "#7E5920" }}>
+                <Col md={5} style={{ backgroundColor: "#7E5920" }} id = "chiCol">
                     <div id="lpChiDiv">
                         <img style={{ visibility: "hidden" }} id="lpChiSkyline" src={chiLandscape}></img>
                         <div id = "lpChiBorder" ></div>
@@ -269,7 +314,7 @@ function LandingPage() {
                         </div>
                         {/* <div className={css(styles.hinge)} style = {{backgroundColor: "blue", width:"5em", height: "5em"}}></div> */}
                     </div>
-                    <div style={{ height: "3em" }} >
+                    <div  id = "miniBrowserDiv"style={{ height: "3em" }} >
                         <img id = "miniBrowser" src = "./images/mini_browser.png" onClick={MockBrowserReverseMinimize}></img>
                     </div>
                 </Col>

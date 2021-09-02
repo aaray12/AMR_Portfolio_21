@@ -1,5 +1,6 @@
 #lpMockBrowser{
     position: relative;
+    top:0%;
     right:13%;
     width: 115.5%;
     height: 60vh;
@@ -11,7 +12,7 @@
     z-index: 1;
     text-align: center;
     background-color: whitesmoke;
-    transition: width 1s, height 1s, right 1s linear, margin-top 1s, background-color 1.25s linear;
+    transition: width 1s, height 1s, right 1s linear, top 1s linear,  margin-top 1s, background-color 1.25s linear;
   }
   #lpMockBrowserLine{
     width: 100%;
