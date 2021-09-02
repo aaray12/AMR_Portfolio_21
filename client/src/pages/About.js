@@ -12,12 +12,12 @@ function AboutPage() {
                 <h5 id="aboutAR" >AR</h5>
             </div>
             <div id="aboutHeadings">
-                {/* <h1 className="aboutHeading">Full-stack Developer.</h1>
+                <h1 className="aboutHeading">Full-stack Developer.</h1>
                 <h1 className="aboutHeading">Based in Chicago.</h1>
-                <h1 className="aboutHeading">Building fully responsive websites.</h1> */}
-                <h1 className="aboutHeading">Clear code.</h1>
+                <h1 className="aboutHeading">Building fully responsive websites.</h1>
+                {/* <h1 className="aboutHeading">Clear code.</h1>
                 <h1 className="aboutHeading">Full-stack.</h1>
-                <h1 className="aboutHeading">Cant lose.</h1>
+                <h1 className="aboutHeading">Cant lose.</h1> */}
             </div>
             <div id="aboutImageDiv">
                 <img src="./images/aaron_1906.png" id="aboutImage"></img>

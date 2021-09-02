@@ -1,0 +1,159 @@
+#aboutPage{
+    background-color: #343330;
+    width: 100%;
+    height: 500vh;
+    }
+    .aboutHeading{
+        color: #D3D2CE;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bolder;
+        font-size: 7.5vh;
+    }
+    #aboutHeadings{
+        position: relative;
+        margin-left: 17.5%;
+        top: 10em;
+    }
+    .projectRightDiv{
+        /* float: right; */
+        position: relative;
+        left: 17.5%;
+        margin-top: 12em;
+        text-align: center;
+        background-image: linear-gradient(#343330, #131311);
+        width: 82.5%;
+        /* height:40em; */
+        /* box-shadow: 0px 0px 10px 0 rgb(4, 4, 3), 0 0px 0px 0 rgb(57, 57, 51); */
+    
+    }
+    .projectLeftDiv{
+        /* float: right; */
+        position: relative;
+        /* left: 17.5%; */
+        margin-top: 12em;
+        text-align: center;
+        background-image: linear-gradient(#343330, #131311);
+        width: 82.5%;
+        /* box-shadow: 0px .25px 10px 0 rgb(4, 4, 3), 0 0px 0px 0 rgb(57, 57, 51); */
+    
+    }
+    #imageDiv{
+        /* display: inline-block; */
+        position: relative;
+        top: 10%;
+        left:-2em;
+        display: inline-block;
+        width: 40%;
+    }
+    .imageDivLeft{
+        /* display: inline-block; */
+        position: relative;
+        top: 10%;
+        right:-2em;
+        display: inline-block;
+        width: 40%;
+    }
+    #macImage{
+    position: relative;
+    top: 4vw;
+    width: 100%;
+    /* box-shadow: 0 .1px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.5); */
+    }
+    #iphoneImage{
+        position: relative;
+       top:-12vw;
+       right: 36%;
+        width: 33%;
+        z-index: 1;
+    }
+    .macImageLeft{
+        position: relative;
+        top: 4vw;
+        width: 100%;
+        /* box-shadow: 0 .1px 5px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.5); */
+    }
+    .iphoneImageLeft{
+        position: relative;
+        top:-12vw;
+        left: 36%;
+        width: 33%;
+        z-index: 1;
+        }
+    #aboutHomeLink{
+        position: sticky;
+        left:92.5%;
+        top: 2em;
+        /* left:5; */
+        /* right: 3em; */
+        background-color: #7E5920;
+        text-align: left;
+        border-width:3px;  
+        border-style:double;
+        border-color: #D1A617;
+        border-radius: 1.5em;
+        width: 3em;
+        height: 3em;
+        z-index: 2;
+        /* margin: 5em; */
+        /* margin-top: 2em; */
+      }
+      #aboutHomeLink:hover{
+        cursor: pointer;
+        width: 3.2em;
+        height: 3.2em;
+        border-width:4px;  
+        border-radius: 1.5em;
+      }
+      #aboutAR{
+        color: white;
+        text-align: center;
+        font-family: 'Shadows Into Light', cursive;
+        margin-top: .45em;
+      }
+      #aboutAR:hover{
+        font-size: x-large;
+        margin-top: .3em;
+        cursor: pointer;
+    
+      }
+      #aboutHead{
+          font-weight: bolder;
+      }
+      .projectInfo{
+        color: #D3D2CE;
+        width: 40%;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+        top:-10vh;
+        right: 0em;
+        margin-top: 3% ;
+        font-family: 'Nanum Gothic', sans-serif;
+
+      }
+      .projectLinks{
+          width: 100%;
+          position: relative;
+          bottom: 10vh;
+          color: ivory;
+          /* font-size: 50%; */
+          font-family: 'Nanum Gothic', sans-serif;
+      }
+      .ghLink{
+        margin: 1.5%;
+
+          font-weight: 900;
+          display: inline;
+      }
+      .webLink{
+          margin: 1.5%;
+        font-weight: 900;
+        display: inline;
+
+    }
+      .projText{
+          font-size:1.4vw;
+      }
+      .projTextHead{
+        font-size:1.6vw;
+    }
