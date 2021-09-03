@@ -88,3 +88,11 @@ bottom: -6.9em;
   #aboutHead{
       font-weight: bolder;
   }
+  @media only screen and (max-width: 375px) {
+    #aboutPages{
+      width: auto;
+    }
+    #aboutImageDiv{
+width: auto;
+    }
+  }
