@@ -6,6 +6,8 @@ import LandingPage from "./pages/Landing"
 import AboutPage from "./pages/About"
 import BlogPage from "./pages/Blog"
 import ContactPage from "./pages/Contact"
+import ContactTYPage from "./pages/ContactTY"
+
 import ProjectsPage from "./pages/Projects"
 
 import './App.css';
@@ -31,6 +33,9 @@ function App() {
           </Route>
           <Route exact path = "/contact" >
             <ContactPage />
+          </Route>
+          <Route exact path = "/sent" >
+            <ContactTYPage />
           </Route>
         </Switch>
       </div>

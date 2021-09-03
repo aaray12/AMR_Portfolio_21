@@ -1,0 +1,55 @@
+#aboutPages{
+    background-color: #343330;
+    width: auto;
+    /* height: auto; */
+    }
+    .aboutHeading{
+        color: #D3D2CE;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight: bolder;
+        font-size: 7.5vh;
+    }
+    #aboutHeadings{
+        position: relative;
+        margin-left: 17.5%;
+        top: 10em;
+    }
+    #aboutHomeLink{
+        position: sticky;
+        left:92.5%;
+        top: 2em;
+        /* left:5; */
+        /* right: 3em; */
+        background-color: #7E5920;
+        text-align: left;
+        border-width:3px;  
+        border-style:double;
+        border-color: #D1A617;
+        border-radius: 1.5em;
+        width: 3em;
+        height: 3em;
+        z-index: 2;
+        /* margin: 5em; */
+        /* margin-top: 2em; */
+      }
+      #aboutHomeLink:hover{
+        cursor: pointer;
+        width: 3.2em;
+        height: 3.2em;
+        border-width:4px;  
+        border-radius: 1.5em;
+      }
+      #aboutAR{
+        color: white;
+        text-align: center;
+        font-family: 'Shadows Into Light', cursive;
+        margin-top: .45em;
+      }
+      #aboutAR:hover{
+        font-size: x-large;
+        margin-top: .3em;
+        cursor: pointer;
+    
+      }
+
+
