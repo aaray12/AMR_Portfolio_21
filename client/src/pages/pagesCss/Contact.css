@@ -1,8 +1,15 @@
 #aboutPages{
     background-color: #343330;
     width: auto;
+    font-family: 'Nanum Gothic', sans-serif;
     /* height: auto; */
     }
+    #tyPages{
+        background-color: #343330;
+        width: auto;
+        font-family: 'Nanum Gothic', sans-serif;
+        height: 100vh;
+        }
     .aboutHeading{
         color: #D3D2CE;
         font-family: 'Nanum Gothic', sans-serif;
@@ -51,5 +58,78 @@
         cursor: pointer;
     
       }
+      #emailMessage{
+          height: 5em;
+      }
+      #sendBtn{
+          padding: .5em;
+          padding-left: 1em;
+          padding-right: 1em ;
+          background-color: rgba(255, 255, 255, 0);
+          color: white;
+          border: 1px solid  white;
+          border-radius: 10%;
+          margin-bottom: 3em;
+          font-weight: normal;
+          height: auto;
+          width: auto;
+          transition: width 1s, height 1s, font-weight 1s, border 1s, border-radius .5s, color 1s
+      }
+      #sendBtn:hover{
+        padding: .5em;
+        padding-left: 1em;
+        padding-right: 1em ;
+        background-color: rgba(255, 255, 255, 0);
+        color: #D1A617;
+        border: 1px solid  #D1A617;
+        border-radius: 10%;
+        margin-bottom: 3em;
+        width: 8vh;
+        height: 8vh;
+        border-radius: 100%;
+        font-weight: bolder;
+
+    }
+    .smIcons{
+        width:33%;
+        margin: 1em;
+        cursor: pointer;
+    }
+    #iconDiv{
+        width: 66%;
+        padding: 2em;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+    #okBtn{
+        margin: auto;
+        margin-bottom: 3em;
+        border: 1px solid white;
+        padding: .25em;
+        padding-left: .5em;
+        padding-right: .5em;
+        border-radius: 5%;
+        font-weight: normal;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        font-size: 222%;
+        margin-top: 2em;
+        transition: border 1s, border-radius 1s, color, 1s, font-weight 1s
+    }
+    #okBtn:hover{
+        margin: auto;
+        padding:.25em;
+        padding-left: .75em;
+        padding-right: .75em;
+        border: 2px solid #D1A617;
+        color: #D1A617;
+        font-weight: bolder;
+        border-radius: 10%;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 222%;
+        margin-top: 2em;
+        margin-bottom: 3em;
+
+    }
 
 
