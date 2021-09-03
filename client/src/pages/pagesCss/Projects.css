@@ -1,13 +1,14 @@
 #aboutPage{
     background-color: #343330;
     width: 100%;
-    height: 500vh;
+    height: 475vh;
     }
-    .aboutHeading{
+    .projectsHeading{
         color: #D3D2CE;
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: bolder;
         font-size: 7.5vh;
+        margin-bottom: 5em;
     }
     #aboutHeadings{
         position: relative;
@@ -135,7 +136,7 @@
           width: 100%;
           position: relative;
           bottom: 10vh;
-          color: ivory;
+          color: whitesmoke;
           /* font-size: 50%; */
           font-family: 'Nanum Gothic', sans-serif;
       }

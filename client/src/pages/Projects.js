@@ -12,9 +12,9 @@ function ProjectsPage() {
                 <h5 id="aboutAR" >AR</h5>
             </div>
             <div id="aboutHeadings">
-                <h1 className="aboutHeading">Clear code.</h1>
-                <h1 className="aboutHeading">Full-stack.</h1>
-                <h1 className="aboutHeading">Cant lose.</h1>
+                {/* <h1 className="aboutHeading">Clear code.</h1>
+                <h1 className="aboutHeading">Full-stack.</h1> */}
+                <h1 className="projectsHeading">Portfolio</h1>
             </div>
             <div className="projectRightDiv">
                 <div id="imageDiv">
@@ -23,10 +23,8 @@ function ProjectsPage() {
                     <img src="./images/iphone.png" id="iphoneImage"></img>
                 </div>
                 <div className="projectInfo">
-                    <h5 className="projTextHead">Project #</h5>
-                    <p className="projText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h5 className="projTextHead">Traveling Pocket Wizard </h5>
+                    <p className="projText">A MERN stack web app developed to be a Covid-19 consious way to start exploring travele again. We used multiple API's to pull usefull travel information into one location. Look up flights, hotels, attractions and the latest Covid-19 statics for your destination. Register a new account, log in and start keeping track of all your new travel plans.</p>
                 </div>
                 <div className="projectLinks">
                     <h3 className="ghLink">Github</h3>
@@ -35,10 +33,8 @@ function ProjectsPage() {
             </div>
             <div className="projectLeftDiv">
                 <div className="projectInfo">
-                    <h5 className="projTextHead">Project #</h5>
-                    <p className="projText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h5 className="projTextHead">Music Rater</h5>
+                    <p className="projText">Music Rater is an application that allows users to search for information about a song, artist, or album. The user can 'Like' a song, artist, or album, and that song, artitst, or album will be added to the corresponding Top Songs/Top Artists/Top Albums chart. The user can access the Top Songs, Top Artists, and Top Albums charts to see the most popular songs, artists, and albums for all our users.</p>
                 </div>
                 <div className="imageDivLeft">
                     <img src="./images/mac.png" className="macImageLeft"></img>
@@ -57,10 +53,8 @@ function ProjectsPage() {
                     <img src="./images/iphone.png" id="iphoneImage"></img>
                 </div>
                 <div className="projectInfo">
-                    <h5 className="projTextHead">Project #</h5>
-                    <p className="projText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h5 className="projTextHead">Branding Portal</h5>
+                    <p className="projText">A MERN stack web app developed to help marketing agencies keep track of different brands. The app contains an admin and a user dashboard. Only admins may register new users, create and edit brands, as well as asign brand access to other users. A non admin user is only able to view brands that an admin has shared with them.</p>
                 </div>
                 <div className="projectLinks">
                     <h3 className="ghLink">Github</h3>
@@ -69,7 +63,7 @@ function ProjectsPage() {
             </div>
             <div className="projectLeftDiv">
                 <div className="projectInfo">
-                    <h5 className="projTextHead">Project #</h5>
+                    <h5 className="projTextHead">BioVie</h5>
                     <p className="projText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
