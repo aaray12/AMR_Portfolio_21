@@ -205,10 +205,10 @@ var clicked = false
         document.getElementById('lpContactBtn').style.visibility = "visible"
         document.getElementById('lpContactBtn').classList.add(css(styles.zoomInUp))
     }
-    function showBlogBtn() {
-        document.getElementById('lpBlogBtn').style.visibility = "visible"
-        document.getElementById('lpBlogBtn').classList.add(css(styles.zoomInUp))
-    }
+    // function showBlogBtn() {
+    //     document.getElementById('lpBlogBtn').style.visibility = "visible"
+    //     document.getElementById('lpBlogBtn').classList.add(css(styles.zoomInUp))
+    // }
     function Reload() {
         window.location.reload()
     }
@@ -230,7 +230,7 @@ var clicked = false
     setTimeout(() => { document.getElementById("lpBrowsrerBackground").style.opacity = "100%" }, 2500);
     setTimeout(showAboutBtn, 2000);
     setTimeout(showProjectsBtn, 2250);
-    setTimeout(showBlogBtn, 2500);
+    // setTimeout(showBlogBtn, 2500);
     setTimeout(showContactBtn, 2750);
 
     function heyShake() {
@@ -282,7 +282,7 @@ var clicked = false
                         <div id="lpBrowserLinks2" style = {{visibility: "hidden"}}>
                         <Button className="navBtns2" id = "lpAboutBtn2" onClick={toAbout}>About</Button>
                         <Button className="navBtns2" id= "lpProjectsBtn2" onClick={toProjects}>Projects</Button>
-                        <Button className="navBtns2" id= "lpBlogBtn2" onClick={toBlog}>Blog</Button>
+                        {/* <Button className="navBtns2" id= "lpBlogBtn2" onClick={toBlog}>Blog</Button> */}
                         <Button className="navBtns2" id= "lpContactBtn2" onClick={toContact}>Contact</Button>
                     </div>
                     </div>
@@ -306,7 +306,7 @@ var clicked = false
                         <div id="lpBrowserLinks">
                             <Button className="navBtns" id="lpAboutBtn" onClick={toAbout}>About</Button>
                             <Button className="navBtns" id="lpProjectsBtn" onClick={toProjects}>Projects</Button>
-                            <Button className="navBtns" id="lpBlogBtn" onClick={toBlog}>Blog</Button>
+                            {/* <Button className="navBtns" id="lpBlogBtn" onClick={toBlog}>Blog</Button> */}
                             <Button className="navBtns" id="lpContactBtn" onClick={toContact}>Contact</Button>
                         </div>
                         <div id="lpBrowsrerBackground">

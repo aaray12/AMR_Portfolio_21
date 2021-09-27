@@ -1,7 +1,7 @@
 #aboutPage{
     background-color: #343330;
     width: 100%;
-    height: 475vh;
+    height: 100%;
     }
     .projectsHeading{
         color: #D3D2CE;
@@ -139,18 +139,45 @@
           color: whitesmoke;
           /* font-size: 50%; */
           font-family: 'Nanum Gothic', sans-serif;
+          transition: border 1s, border-radius 1s, color, 1s, font-weight 1s
+
       }
       .ghLink{
         margin: 1.5%;
-
-          font-weight: 900;
-          display: inline;
+        font-weight: 900;
+        border: none;
+        text-decoration: none;
+        display: inline;
+        font-size: 3vw;
+        color: whitesmoke;
+        transition: border 1s, border-radius 1s, color, 1s, font-weight 1s
       }
+      .ghLink:hover{
+        border: 2px solid #D1A617;
+        color: #D1A617;
+        font-weight: bolder;
+        padding: 2vw;
+        border-radius: 50em;
+        transition: border 1s, border-radius 1s, color, 1s, font-weight 1s
+
+    }
       .webLink{
-          margin: 1.5%;
+        margin: 1.5%;
         font-weight: 900;
         display: inline;
+        border: none;
+        text-decoration: none;
+        font-size: 3vw;
+        color: whitesmoke;
 
+        transition: border 1s, border-radius 1s, color, 1s, font-weight 1s
+    }
+    .webLink:hover{
+        border: 2px solid #D1A617;
+        color: #D1A617;
+        font-weight: bolder;
+        padding: 2vw;
+        border-radius: 50em;
     }
       .projText{
           font-size:1.4vw;
