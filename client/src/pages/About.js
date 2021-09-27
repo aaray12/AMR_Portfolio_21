@@ -30,7 +30,6 @@ function AboutPage() {
                 Solving tough problems and arriving at a successful solution is what drives me. I consider web development to be a team sport and I actively seek out collaboration and teamwork. Ultimately I am seeking a position that allows me to grow as a professional as a front-end web developer and work with others to achieve a common goal.
                 </p>
                 <p>I was born and raised in the north suburbs of Chicago. Graduated from Depaul University in 2019 with a major in communications concentrating on media production and a minor in film. Though I've stayed close to home in the city I love, I also have a passion for travel and exploring new places. This, in part, is what led me to study abroad at Monash University in Melbourne, Australia.</p>
-                <p>After I graduated I worked as a content producer and then as an operations associate for a local logistics company called Schlep in Chicago. Feeling creatively unfulfilled, I decided to make a career change into web development. I completed Northwestern University's full stack web development program and have been working as a freelance web developer since the beginning of the year. Check out the portfolio page to view some of my projects!</p>
                 </div>
             </div>
             <div style ={{height: "33vh", }}></div>
