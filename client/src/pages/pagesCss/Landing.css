@@ -196,6 +196,7 @@
     bottom: 5em;
     text-align: center;
     z-index: 1;
+    margin-bottom: -5%;
   }
   .navBtns{
     margin:.3em;
@@ -463,6 +464,29 @@
       margin: auto;
       width: 80%;
       text-align: center;
+    }
+  }
+  @media only screen and (max-height:603px){
+    #lpBrowserLinks{
+      margin-bottom: -10%;
+    }
+  }
+  @media only screen and (max-height:500px){
+    #lpBrowserLinks{
+      margin-bottom: -15%;
+    }
+  }
+  @media only screen and (max-height:450px){
+    #lpBrowserLinks{
+      margin-bottom: -20%;
+    }
+  }
+  @media only screen and (max-height:400px){
+    #lpBrowserLinks{
+      margin-bottom: -5%;
+    }
+    #lpMeImgDiv{
+      display: none;
     }
   }
   @media only screen and (max-width: 400px) {
