@@ -187,8 +187,36 @@
         font-size:1.6vw;
         margin-top: -10em;
     }
-    /* @media only screen and (max-width:930px){
-        .projTextHead{
-            margin-top: 10em !important;
+    @media (max-height: 813px) and (max-width: 376px) {
+        .projectInfo{
+            position: relative;
+            top:-2vh;
         }
-      } */
+        .projectLinks {
+            bottom: 3vh;
+        }
+        .projectRightDiv {
+            margin-top: 3em;
+        }
+        .projectLeftDiv {
+            margin-top: 3em;
+        }
+        .projectsHeading {
+            font-size: 5vh;
+            margin-bottom: 2.5em;
+        }
+        #aboutHeadings{
+            top:10vh
+        }
+        #imageDiv{
+            left:-1em;
+            top:1em
+        }
+        .imageDivLeft{
+            right:-1em;
+            top:1em
+        }
+        #aboutHomeLink {
+            left: 80%;
+        }
+    }
