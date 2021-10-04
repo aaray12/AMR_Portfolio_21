@@ -128,7 +128,7 @@
         position: relative;
         top:-10vh;
         right: 0em;
-        margin-top: 3% ;
+        /* margin-top: 10em ; */
         font-family: 'Nanum Gothic', sans-serif;
 
       }
@@ -139,6 +139,7 @@
           color: whitesmoke;
           /* font-size: 50%; */
           font-family: 'Nanum Gothic', sans-serif;
+          margin-top: auto;
           transition: border 1s, border-radius 1s, color, 1s, font-weight 1s
 
       }
@@ -184,4 +185,10 @@
       }
       .projTextHead{
         font-size:1.6vw;
+        margin-top: -10em;
     }
+    /* @media only screen and (max-width:930px){
+        .projTextHead{
+            margin-top: 10em !important;
+        }
+      } */
