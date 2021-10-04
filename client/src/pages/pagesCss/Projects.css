@@ -187,7 +187,7 @@
         font-size:1.6vw;
         margin-top: -10em;
     }
-    @media (max-height: 813px) and (max-width: 376px) {
+    @media (max-height: 850px) and (max-width: 400px) {
         .projectInfo{
             position: relative;
             top:-2vh;
