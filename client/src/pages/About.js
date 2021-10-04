@@ -11,7 +11,7 @@ function AboutPage() {
             <div id="aboutHomeLink" onClick = {()=> window.location.href = "/"}>
                 <h5 id="aboutAR" >AR</h5>
             </div>
-            <div id="aboutHeadings">
+            <div id="aboutHeaders">
                 <h1 className="aboutHeading">Full-stack Developer.</h1>
                 <h1 className="aboutHeading">Based in Chicago.</h1>
                 <h1 className="aboutHeading">Building fully responsive websites.</h1>

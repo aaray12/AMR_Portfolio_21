@@ -9,7 +9,7 @@ width: 100%;
     font-weight: bolder;
     font-size: 7.5vh;
 }
-#aboutHeadings{
+#aboutHeaders{
     position: relative;
     margin-left: 17.5%;
     top: 10em;
@@ -94,5 +94,30 @@ bottom: -6.9em;
     }
     #aboutImageDiv{
 width: auto;
+    }
+  }
+  @media (max-height: 850px) and (max-width: 400px) {
+    .aboutHeading{
+      font-size: 3.5vh;
+    }
+    #aboutHeaders{
+      margin-left: none;
+    }
+    #aboutImageDiv{
+      float:none;
+      width: auto;
+      margin-top: 0em;
+    }
+    #aboutImage{
+      width: 85%;
+      bottom: -12em;
+      left: 1em;
+
+    }
+    #aboutText {
+      margin-left: 10%;
+    }
+    #aboutTextDiv{
+      width: 90%;
     }
   }

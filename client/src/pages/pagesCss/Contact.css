@@ -10,7 +10,7 @@
         font-family: 'Nanum Gothic', sans-serif;
         height: 100vh;
         }
-    .aboutHeading{
+    /* .aboutHeading{
         color: #D3D2CE;
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: bolder;
@@ -20,7 +20,7 @@
         position: relative;
         margin-left: 17.5%;
         top: 10em;
-    }
+    } */
     #aboutHomeLink{
         position: sticky;
         left:92.5%;
