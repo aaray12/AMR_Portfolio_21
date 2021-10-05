@@ -24,7 +24,7 @@ function ProjectsPage() {
                 </div>
                 <div className="projectInfo">
                     <h5 className="projTextHead">Traveling Pocket Wizard </h5>
-                    <p className="projText">A MERN stack web app developed to be a Covid-19 consious way to start exploring travele again. We used multiple API's to pull usefull travel information into one location. Look up flights, hotels, attractions and the latest Covid-19 statics for your destination. Register a new account, log in and start keeping track of all your new travel plans.</p>
+                    <p className="projText">A MERN stack web app developed to be a Covid-19 conscious way to start exploring travele again. My team and I used multiple API's to pull usefull travel information into one location. Users may look up flights, hotels, attractions and the latest Covid-19 statics for their destinations. In addition, they may register a new account, log in and start keeping track of all their new travel plans.</p>
                 </div>
                 <div className="projectLinks">
                     <a className="ghLink" href = "https://github.com/aaray12/traveling-website" target="_blank">GitHub</a>
@@ -34,7 +34,7 @@ function ProjectsPage() {
             <div className="projectLeftDiv">
                 <div className="projectInfo">
                     <h5 className="projTextHead">Music Rater</h5>
-                    <p className="projText">Music Rater is an application that allows users to search for information about a song, artist, or album. The user can 'Like' a song, artist, or album, and that song, artitst, or album will be added to the corresponding Top Songs/Top Artists/Top Albums chart. The user can access the Top Songs, Top Artists, and Top Albums charts to see the most popular songs, artists, and albums for all our users.</p>
+                    <p className="projText">Music Rater is an application that allows users to search for information about a song, artist, or album. The user can 'Like' a song, artist, or album, and it will be added to the corresponding Top Songs/Top Artists/Top Albums chart. The user can access those charts to see the most popular 'Likes' for all our users.</p>
                 </div>
                 <div className="imageDivLeft">
                     <img src="./images/music rater_mac copy.png" className="macImageLeft"></img>
@@ -54,7 +54,7 @@ function ProjectsPage() {
                 </div>
                 <div className="projectInfo">
                     <h5 className="projTextHead">Branding Portal</h5>
-                    <p className="projText">A MERN stack web app developed to help marketing agencies keep track of different brands. The app contains an admin and a user dashboard. Only admins may register new users, create and edit brands, as well as asign brand access to other users. A non admin user is only able to view brands that an admin has shared with them.</p>
+                    <p className="projText">A MERN stack web app developed to help marketing agencies keep track of different brands. The app contains an admin and a user dashboard. Only admins may register new users, create and edit brands, as well as assign brand access to other users. A non-admin user is only able to view brands that an admin has shared with them.</p>
                 </div>
                 <div className="projectLinks">
                     {/* <p className="ghLink">Github</p> */}
@@ -64,7 +64,7 @@ function ProjectsPage() {
             <div className="projectLeftDiv">
                 <div className="projectInfo">
                     <h5 className="projTextHead">BioVie</h5>
-                    <p className="projText">A multi-page website built with Wordpress. Utilized multiple pluggins to create a fully resposnsive site that keeps up to date with the latest press releases and stock information for BioVie.  </p>
+                    <p className="projText">A multi-page website built with Wordpress. It is a fully resposnsive site that utilizes multiple pluggins to keep up to date with the latest press releases and stock information for BioVie.  </p>
                 </div>
                 <div className="imageDivLeft">
                     <img src="./images/biovie_mac.png" className="macImageLeft"></img>

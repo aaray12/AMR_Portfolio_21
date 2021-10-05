@@ -25,11 +25,11 @@ function AboutPage() {
             <div id="aboutText">
                 <h1 id = "aboutHead">About</h1>
                 <div id ="aboutTextDiv">
-                <h5 id = "aboutTextDivOne">I'm Aaron, a talented problem solver with expereince developing full stack websites with JavaScript, NodeJS, React, Express, Bootstrap and Wordpress.</h5>
+                <h5 id = "aboutTextDivOne">I'm Aaron, a talented problem solver with experience developing full stack websites with JavaScript, NodeJS, React, Express, Bootstrap and Wordpress.</h5>
                 <p>
-                Solving tough problems and arriving at a successful solution is what drives me. I consider web development to be a team sport and I actively seek out collaboration and teamwork. Ultimately I am seeking a position that allows me to grow as a professional as a front-end web developer and work with others to achieve a common goal.
+                Solving tough problems and arriving at successful solutions is what drives me. I consider web development to be a team sport and I actively seek out collaboration and teamwork. Ultimately I am seeking a position that allows me to grow professionally as a front-end web developer and work with others to achieve a common goal.
                 </p>
-                <p>I was born and raised in the north suburbs of Chicago. Graduated from Depaul University in 2019 with a major in communications concentrating on media production and a minor in film. Though I've stayed close to home in the city I love, I also have a passion for travel and exploring new places. This, in part, is what led me to study abroad at Monash University in Melbourne, Australia.</p>
+                <p>I was born and raised in the north suburbs of Chicago. In 2019 I graduated from Depaul University with a major in communications concentrating on media production and a minor in film. Though I've stayed close to home in the city I love, I also have a passion for travel and exploring new places, which also led me to study abroad at Monash University in Melbourne, Australia.</p>
                 </div>
             </div>
             <div style ={{height: "33vh", }}></div>
