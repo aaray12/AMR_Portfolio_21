@@ -58,7 +58,7 @@ function ProjectsPage() {
                 </div>
                 <div className="projectLinks">
                     {/* <p className="ghLink">Github</p> */}
-                    <a className="webLink" href = "https://convergenx-portal.herokuapp.com/" target ="_blank">Website</a>
+                    <a className="webLink" href = "https://branding-portal.herokuapp.com/" target ="_blank">Website</a>
                 </div>
             </div>
             <div className="projectLeftDiv">
